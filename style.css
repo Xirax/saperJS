@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+body{
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+
+    border: solid 6px #4d4d4d;
+}
+
+td{
+    border: solid 2px #4d4d4d;
+
+    background-color: #bfbfbf;
+
+    max-width: 24px;
+    max-height: 24px;
+
+    
+    width: 24px;
+    height: 24px;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+#board{
+    display: none;
+}
+
+#TOP{
+    display: none;
+}
+
+.line{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+
+    object-fit: scale-down;
+
+    pointer-events: none;
+}
+
+input{
+
+    width: 60px;
+    height: 45px;
+
+    background-color: #bfbfbf;
+    border: solid 2px #999999;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    font-size: 14px;
+}
+
+button{
+    width: 60px;
+    height: 45px;
+
+    background-color: #bfbfbf;
+    border: solid 2px #999999;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+#timer{
+
+    width: 100px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    font-size: 24px;
+
+    background-color: #330000;
+    color: #cc0000;
+
+    font-family: 'Press Start 2P', cursive;
+
+    border: solid 6px #4d4d4d;
+}
+
+#bombs{
+
+    width: 100px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    font-size: 24px;
+
+    background-color: #330000;
+    color: #cc0000;
+
+    font-family: 'Press Start 2P', cursive;
+
+    border: solid 6px #4d4d4d;
+}
+
+
+.style1{ color: blue; background-color: #e6e6e6; }
+.style2{ color: green; background-color: #e6e6e6; }
+.style3{ color: red; background-color: #e6e6e6; }
+.style4{ color: orange; background-color: #e6e6e6; }
+.style5{ color: aqua; background-color: #e6e6e6; }
+.style6{ color: yellowgreen; background-color: #e6e6e6; }
+.style7{ color: lightcoral; background-color: #e6e6e6; }
+.style8{ color: maroon; background-color: #e6e6e6; }
+.styleX{ background-color: #e6e6e6; color: #e6e6e6; }
