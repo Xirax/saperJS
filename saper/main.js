@@ -164,28 +164,25 @@ const boardGenerator = {
 
     checkReveals: function(){
 
-        if(this.ACTIVE){
+        let ctn = 0;
 
-            let ctn = 0;
+        let fields = document.getElementsByClassName('cell');
 
-            let fields = document.getElementsByClassName('cell');
-    
-            for(let i=0; i<fields.length; i++){
-                if(fields[i].innerHTML != '' && fields[i].innerHTML != '?' && fields[i].innerHTML != '<img class="icon" src="./imgs/flag.png">') ctn++;
-            }
-    
-            console.log(ctn);
-    
-            if(ctn == (this.ALL_FIELDS - this.BOMBS)){
-    
-                timer.stop();
-               // this.revealBombs();
-    
-                this.ACTIVE = false;
-                document.getElementById('emoji-icon').src = './imgs/emoji/win.png';
-                document.getElementById('end-menu').style.display = "flex";
-                scores.setRecord(timer.timeSpan(), this.WIDTH, this.HEIGHT, this.BOMBS);
-            }
+        for(let i=0; i<fields.length; i++){
+            if(fields[i].innerHTML != '' && fields[i].innerHTML != '?' && fields[i].innerHTML != '<img class="icon" src="./imgs/flag.png">') ctn++;
+        }
+
+        console.log(ctn);
+
+        if(ctn == (this.ALL_FIELDS - this.BOMBS)){
+
+            timer.stop();
+           // this.revealBombs();
+
+            this.ACTIVE = false;
+            document.getElementById('emoji-icon').src = './imgs/emoji/win.png';
+            document.getElementById('end-menu').style.display = "flex";
+            scores.setRecord(timer.timeSpan(), this.WIDTH, this.HEIGHT, this.BOMBS);
         }
     },
 
