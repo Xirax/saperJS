@@ -49,12 +49,40 @@ td{
     display: none;
 }
 
+
+#end-menu{
+
+    display: none;
+
+    margin-top: 24px;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .line{
 
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+#scores{
+    position: absolute;
+
+    right: 0;
+    top: 0;
+}
+
+.scr-tab{
+
+    width: 210px;
+    height: 65px;
+
+    max-width: 210px;
+    max-height: 65px;
 }
 
 .icon{
@@ -82,7 +110,7 @@ input{
 }
 
 button{
-    width: 60px;
+    width: 90px;
     height: 45px;
 
     background-color: #bfbfbf;
@@ -91,11 +119,43 @@ button{
     text-align: center;
 
     font-size: 14px;
+
+    cursor: pointer;
+}
+
+button:hover{
+   border-color: #330000;
+}
+
+
+#emoji{
+    background-color: #4d4d4d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+
+#emoji-icon{
+
+    min-width: 35px;
+    min-height: 35px;
+
+    max-width: 35px;
+    max-height: 35px;
+
+    object-fit: cover;
 }
 
 #timer{
 
-    width: 100px;
+    
+    flex: 2;
+
+    /* width: 100px; */
     height: 50px;
 
     text-align: center;
@@ -113,7 +173,9 @@ button{
 
 #bombs{
 
-    width: 100px;
+    flex: 2;
+
+    /* width: 100px; */
     height: 50px;
 
     text-align: center;
